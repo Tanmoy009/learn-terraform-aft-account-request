@@ -1,17 +1,17 @@
-module "sandbox" {
+module "SAP" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
-    AccountEmail              = "<ACCOUNT EMAIL>"
-    AccountName               = "sandbox-aft"
-    ManagedOrganizationalUnit = "Learn AFT"
-    SSOUserEmail              = "<SSO EMAIL>"
-    SSOUserFirstName          = "Sandbox"
-    SSOUserLastName           = "AFT"
+    AccountEmail              = "tanmoycoc44+sap-np@gmail.com"
+    AccountName               = "SAP-NP-aft"
+    ManagedOrganizationalUnit = "SAP-AFT"
+    SSOUserEmail              = "tanmoycoc44@gmail.com"
+    SSOUserFirstName          = "tanmoy"
+    SSOUserLastName           = "mazumder"
   }
 
   account_tags = {
-    "Learn Tutorial" = "AFT"
+    "Project" = "SAP-AFT"
   }
 
   change_management_parameters = {
@@ -23,5 +23,6 @@ module "sandbox" {
     group = "non-prod"
   }
 
-  account_customizations_name = "sandbox"
+  account_customizations_name = "SAP"
 }
+
