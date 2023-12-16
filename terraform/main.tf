@@ -1,4 +1,4 @@
-module "SAP" {
+module "sandbox" {
   source = "./modules/aft-account-request"
 
   control_tower_parameters = {
@@ -23,6 +23,6 @@ module "SAP" {
     group = "non-prod"
   }
 
-  account_customizations_name = "SAP"
+  account_customizations_name = "sandbox"
 }
 
